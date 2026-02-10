@@ -581,28 +581,6 @@ ul {
   background-color: #31d0aa;
 }
 
-.footer-input {
-  width: 264px;
-  height: 40px;
-
-  padding-left: 16px;
-
-  font-size: 12px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  color: #ffffff;
-
-  background-color: transparent;
-  border: 1px solid #ffffff;
-  border-radius: 4px;
-
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.footer-input::placeholder {
-  color: #ffffff;
-}
-
 .footer-input:focus {
   outline: none;
   border-color: #31d0aa;
@@ -633,20 +611,26 @@ ul {
   height: 40px;
   padding-left: 16px;
 
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 4px;
-  background-color: transparent;
-
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.04em;
   color: #ffffff;
 
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+
   outline: transparent;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-subscribe-input::placeholder {
   color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-subscribe-input:focus {
+  border-color: #31d0aa;
 }
 
 .footer-subscribe-btn {
@@ -846,8 +830,11 @@ ul {
   letter-spacing: 0.04em;
   color: #2e2f42;
 
-  border: 1px solid rgba(46, 47, 66, 0.2);
+  border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
+
+  background-color: transparent;
+  outline: transparent;
 
   resize: none;
 
@@ -855,10 +842,8 @@ ul {
 }
 
 .modal-textarea:focus {
-  outline: none;
   border-color: #4d5ae5;
 }
-
 /* -- Checkbox -- */
 
 .modal-checkbox-wrap {
